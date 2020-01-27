@@ -1,0 +1,24 @@
+﻿@using WebApplication2.Controllers
+@model HomeController.DayTimeViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <label asp-for="Period">Время суток</label>
+        <select asp-for="Period" asp-items="Html.GetEnumSelectList<HomeController.DayTime>()"></select>
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+@functions
+{
+    public int GetFactorial(int n)
+    {
+        int result = 1;
+        for (int i = 1; i <= n; i++)
+            result *= i;
+        return result;
+    }
+}
