@@ -3,7 +3,7 @@
   "name": "asp.net",
   "private": true,
   "devDependencies": {
-    "webpack": "^2.5.1",
+    "webpack": "^5.74.0",
     "clean-webpack-plugin": "^0.1.16"
   },
   "scripts": {
